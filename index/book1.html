@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<body class="book1-page">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabian Garzon</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="book1-page">
+  <header>
+    <a href="page.html" class="logo">FABIAN GARZON</a>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="#">+ PORTFOLIO</a>
+          <ul class="dropdown-menu">
+            <li><a href="book1.html">BOOK I</a></li>
+            <li><a href="#">BOOK II</a></li>
+            <li><a href="#">PORTRAIT</a></li>
+            <li><a href="#">ADVERTISING</a></li>
+            <li><a href="#">CELEBRITY</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">+ CREATIVE</a>
+          <ul class="dropdown-menu">
+            <li><a href="colombia.html">Hecho en Colombia</a></li>
+            <li><a href="#">Mujeres</a></li>
+            <li><a href="#">Fast and furious</a></li>
+            <li><a href="#">Veld music festival</a></li>
+            <li><a href="#">Gustavo velez</a></li>
+            <li><a href="#">Barichara</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="carousel">
+    <div class="carousel-slide">
+      <img src="assets/book1.1.svg" alt="Image 1">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.2.svg" alt="Image 2">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.3.svg" alt="Image 3">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.4.svg" alt="Image 4">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.5.svg" alt="Image 5">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.6.svg" alt="Image 6">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.7.svg" alt="Image 7">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.8.svg" alt="Image 8">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.9.svg" alt="Image 9">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.10.svg" alt="Image 10">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.11.svg" alt="Image 11">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.12.svg" alt="Image 12">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.13.svg" alt="Image 13">
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/book1.14.svg" alt="Image 14">
+    </div>
+  </div>
+
+  <div class="carousel-buttons">
+    <button id="prev">⟨</button>
+    <button id="next">⟩</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.book1-page .carousel-slide');
+    let currentSlide = 0;
+
+    document.getElementById('prev').addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateCarousel();
+    });
+
+    function updateCarousel() {
+      slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${(index - currentSlide) * 100}%)`;
+      });
+    }
+
+    updateCarousel();
+  </script>
+</body>
+</html>
+  

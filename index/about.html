@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body.about-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+    }
+
+    nav ul li a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    main.about-section {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    main.about-section h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    main.about-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+<body class="about-page">
+  <header>
+    <a href="page.html" class="logo">FABIAN GARZON</a>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="#">+ PORTFOLIO</a>
+          <ul class="dropdown-menu">
+            <li><a href="book1.html">BOOK I</a></li>
+            <li><a href="#">BOOK II</a></li>
+            <li><a href="#">PORTRAIT</a></li>
+            <li><a href="#">ADVERTISING</a></li>
+            <li><a href="#">CELEBRITY</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">+ CREATIVE</a>
+          <ul class="dropdown-menu">
+            <li><a href="colombia.html">Hecho en Colombia</a></li>
+            <li><a href="#">Mujeres</a></li>
+            <li><a href="#">Fast and Furious</a></li>
+            <li><a href="#">Veld Music Festival</a></li>
+            <li><a href="#">Gustavo Velez</a></li>
+            <li><a href="#">Barichara</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="active">ABOUT ME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-section">
+    <h1>About</h1>
+    <p>
+      Fabian Garzon’s journey through diverse cultures and worlds has not only shaped his unique photography style but also fueled his entrepreneurial ventures in the digital ecosystem.
+      With a visionary eye, he captures influential people, celebrities, and models, using innovative techniques with colors, space, and light to create images that are fresh, sophisticated, edgy, and original.
+    </p>
+    <p>
+      Fabian’s work often defies convention, offering a surreal artistic lens that reimagines his subjects in unexpected and thought-provoking ways.
+      “I approach every shoot as if it’s my last, striving to produce something timeless and impactful for my clients.”
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Fabian Garzon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
